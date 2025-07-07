@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class BencodeDecoder {
 
-    static Object decodeBencode(String bencodedString) {
+    public static Object decodeBencode(String bencodedString) {
         if (bencodedString == null || bencodedString.isEmpty()) {
           throw new RuntimeException("Invalid bencoded value");
         }
